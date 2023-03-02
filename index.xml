@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Science Portfolio on Afreen Fatima</title>
+    <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/</link>
+    <description>Recent content in Data Science Portfolio on Afreen Fatima</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Dec 2022 11:25:05 -0400</lastBuildDate><atom:link href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Mining using RStudio</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-6/</link>
+      <pubDate>Wed, 14 Dec 2022 11:25:05 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-6/</guid>
+      <description>We are using a dataset “swPollution.csv” that shows the records of waste and pollution data. We will analyse and visualise this dataset and perform data mining tasks to discuss, compare and contrast the advantages and disadvantages of applying any data mining techniques that are required to perform the learning task. Further, we will use toolkit to develop a data mining application for a given learning task and evaluating the results obtained.</description>
+    </item>
+    
+    <item>
+      <title>PDF Scraping using Python</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-1/</link>
+      <pubDate>Tue, 09 Aug 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-1/</guid>
+      <description>Now a day’s medical field is advancing use of Artificial intelligence as deep learning and computer vision for increased use of document extraction from medical documents to automate patient reports. The tasks should be automated as much as possible to enable efficiency. Standardizations are very important to support automation. By having standard processes and tools, a global maintenance and enhancements of tools can be provided. Then all users can benefit from this as updates could be made available to all users through standard processes.</description>
+    </item>
+    
+    <item>
+      <title>Data Modelling and Analysis using MS Excel</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-2/</link>
+      <pubDate>Mon, 10 Jan 2022 11:00:59 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-2/</guid>
+      <description>KinetEco a small non profit organisation has advised on a suitable Business Intelligence solution that would allow Data Analysts in headquarters to run a number of reports to analyse transactions by customer, product and date (tables provided in Excel files) Here, I have decided to present two options for them, one using in-memory data management and processing with Excel and PowerQuery, the other using SQL Server Integration and Analysis services (SSIS &amp;amp; SSAS)</description>
+    </item>
+    
+    <item>
+      <title>Statistical Analysis using RStudio</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-5/</link>
+      <pubDate>Mon, 13 Dec 2021 11:15:58 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-5/</guid>
+      <description>SECTION 1: VISUALISATIONS AND SUMMARY STATISTICS Model 2 shows a normal distribution on histogram as it is not skewed on completely one side. Mean and median are calculated using ‘mean’ and ‘median’ functions where mean of model 2 is 82 and median is 82.3. Hence we can say the model 2 is normally distributed. Histogram ‘value’ does not shows a normal distribution as it is a skewed completely one side. Mean and median is calculated using ‘mean’ and ‘median’ functions where mean of value is 96 and median is 52.</description>
+    </item>
+    
+    <item>
+      <title>Model deployment for prediction</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-4/</link>
+      <pubDate>Tue, 12 Oct 2021 11:14:48 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-4/</guid>
+      <description>MODEL 1: LOGISTIC REGRESSION Designing and implementing a Logistic Regression model to predict Cause. We are using caret train for predicting cause where method is logistic regression, trControl and preProcess is defined in initial stages of loading and summarising data. trControl is using method “repeatedcv” for 10 fold cross validation and repeats 3. For preprocessing we are using principal component analysis which might improve a model’s ability since it creates a new set of variables, that are independent, from the existing ones.</description>
+    </item>
+    
+    <item>
+      <title>Exploratory Data Analysis Using RStudio</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-3/</link>
+      <pubDate>Sat, 11 Sep 2021 11:13:32 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-3/</guid>
+      <description>We are using two data sets from Aquaculture (fish farms) to discuss main concepts and tools for a data science project, escapes.csv that contains records of fish escapes and incidents and analysis.csv that contains the results of water analysis using several components. This has aligned records with escape.csv. Which will be later used for merging both. We are loading, exploring, modelling and visualizing data using off-the-shelf tools and packages in R.</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/about/</guid>
+      <description>About Me I have completed my MSc Data Science from Robert Gordon University of Aberdeen in addition to this I have been in internship with Valid Insights Part of Bioscript Group that’s a Pharmaceutical company.
+At Valid Insights I have been involved in innovating Python customisable tool to develop patient reports after converting unstructured PDF data to CSV using python.
+In addition to this I have gained an experience in Oil and Gas industry as Real Time Systems Engineer where I have processed and monitored client’s critical data through dashboards and analytics of OSIsoft PI applications.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/contact/</guid>
+      <description>Follow me on below social media platforms
+Platform URL LinkedIn: www.linkedin.com/in/afatima04 GitHub: https://github.com/Afreenn04/AfreenFatima_DataScience_Portfolio.git Your Name Email Address An email address is required. Message </description>
+    </item>
+    
+  </channel>
+</rss>

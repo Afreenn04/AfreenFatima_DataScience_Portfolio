@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>PDF Scraping using Python | Afreen Fatima</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Extracting tabular data from PDF file to CSV using Python-Camelot">
+    <meta name="generator" content="Hugo 0.110.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="PDF Scraping using Python" />
+<meta property="og:description" content="Extracting tabular data from PDF file to CSV using Python-Camelot" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-08-09T10:58:08-04:00" />
+<meta property="article:modified_time" content="2022-08-09T10:58:08-04:00" /><meta property="og:site_name" content="Afreen Fatima" />
+<meta itemprop="name" content="PDF Scraping using Python">
+<meta itemprop="description" content="Extracting tabular data from PDF file to CSV using Python-Camelot"><meta itemprop="datePublished" content="2022-08-09T10:58:08-04:00" />
+<meta itemprop="dateModified" content="2022-08-09T10:58:08-04:00" />
+<meta itemprop="wordCount" content="929">
+<meta itemprop="keywords" content="scene," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PDF Scraping using Python"/>
+<meta name="twitter:description" content="Extracting tabular data from PDF file to CSV using Python-Camelot"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/maxresdefault.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Afreen Fatima
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/Afreenn04/Portfolio-Data-Science.git" target="_blank" rel="noopener" class="GitHub ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">PDF Scraping using Python</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Extracting tabular data from PDF file to CSV using Python-Camelot
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">PDF Scraping using Python</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-08-09T10:58:08-04:00">August 9, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Now a day’s medical field is advancing use of Artificial intelligence as deep learning and computer vision for increased use of document extraction from medical documents to automate patient reports. The tasks should be automated as much as possible to enable efficiency. Standardizations are very important to support automation. By having standard processes and tools, a global maintenance and enhancements of tools can be provided. Then all users can benefit from this as updates could be made available to all users through standard processes.</p>
+<p>The project aims to increase the understanding of developing a framework for information extraction (IE) from unstructured PDF documents to CSV files. As a result we have a tool to neatly extract tabular data from PDF to CSV files. This project will aim to develop a generic tool to develop a patient narrative using pre filled word document template.</p>
+<p>There are several Python packages that make it simple to convert PDF to CSV files. In the below methods, we&rsquo;ll look at how to use five different modules and methods to convert PDF to CSV in Python. All five methods were carefully chosen and implemented to determine which produces the best results in terms of efficiency and accuracy. When we parse a PDF document using Python, it does not recognise the rows and columns and sometimes fails to perform well, producing incorrect results. Challenges were encountered while extracting the data, such as inconsistency with headers on each page and no border line differentiation for pdf tables. I&rsquo;ve found that method 3 using Camelot works best for these kinds of inconsistencies in documents, especially if they&rsquo;re scanned or have no margins. Evaluating extracted document accuracy  shows Camelot gives 98% accuracy</p>
+<p>The output document template provided is in a *.docx format with 3 pages in total. Following the review of QC comments, we have 13 appendices from which the data will be loaded into the template to generate the patient narrative. The study demonstrates how to use Python to automate the filling of blanks in word documents. The project requires data extraction from unstructured tables, which will require text mining before information extraction, as well as manual template editing to replace blanks in the template with placeholders with curly brackets. So, after creating csv files, our first step was to manually update our template with placeholders. After we prepared a template with placeholders. The next step is to go through the template paragraph by paragraph, using Python Pandas and text mining techniques to update the placeholders.</p>
+<p>Pre-processing and text mining 14 pandas data frames, which will then be used to pull dictionary terms in docxtpl context to replace template placeholders. Panda data frames are pre-processed to extract information from csv files in accordance with QC comments in the Narrative template. Each paragraph of the template narrative includes comments that will guide you through the process of extracting required csv files and pre-processing columns of each csv file in pandas as needed. The narrative template placeholders and code required in dictionary code to update the output values by extracting information from pre-processed csv files to patient narrative for patient The dictionary code in docxtpl used for context has used the traditional representation of using loc and iloc systems. Where the methodology locks specific data specified in code and presents data that satisfies the conditionals. For example, in the age (X) methodology, we assign placeholders in the narrative template to the extraction code. Assume we assign age placeholder &ldquo;X&rdquo; by using age data frame with only subject identifier.</p>
+<p>The comparison and evaluation have been carried out for patient narrative that was accurately pulling up the data using place holders and dictionary approach with the use of docxtpl module. This Project designed a system architecture for the diverse-structure PDF tabular data document extraction. The information has been extracted from PDF to CSV using different methods. Camelot has worked well for PDF to CSV tabular data extraction. It was programmed in Python, a cross-platform programming language. The program was modularized using pandas’ data frame functions to transform the extracted dataset in CSV. At the end of the extraction of PDF to CSV, Camelot method for information extraction has been evaluated for parsing report that gave 98% of accuracy. After the PDF document extraction from PDF to CSV files this project designed a patient narrative tool in Python.
+For designing patient narrative tool of single patient, we have using classic approach of pandas reading csv files and transforming the data to extract required information. Initially project has dealt the major part with researching best method for data extraction and minor work has been done with generating one patient narrative with classical approach of updating placeholders in narrative template document. Later, the narrative for another patient has been developed for quality check purposes. So, this project has dealt with Information extraction and developing two patient narratives.</p>
+<p>We learned a lot about how we can apply python solutions within our clinical environment. We had been able to help some colleagues in PDF extraction. By using python, the hurdles to perform PDF to CSV conversion from the scanned and unstructured document has taken more than 80% of project implementation time while 20% was given for creating patient narrative tool. Therefore, with python understanding we also need to learn the template language to create narratives.
+Hence forth, I am more confident now for more opportunities with Unstructured PDF extraction to CSV files as well as clear picture of all the requirement that for template filling using python from CSV files. Looking forward for more opportunities in future</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/tags/scene/" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">scene</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-4/">Model deployment for prediction</a>
+        </li>
+	    
+    </ul>
+</div>
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/" >
+    &copy;  Afreen Fatima 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/Afreenn04/Portfolio-Data-Science.git" target="_blank" rel="noopener" class="GitHub ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

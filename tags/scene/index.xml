@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scene on Afreen Fatima</title>
+    <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/tags/scene/</link>
+    <description>Recent content in scene on Afreen Fatima</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Aug 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/tags/scene/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PDF Scraping using Python</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-1/</link>
+      <pubDate>Tue, 09 Aug 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-1/</guid>
+      <description>Now a day’s medical field is advancing use of Artificial intelligence as deep learning and computer vision for increased use of document extraction from medical documents to automate patient reports. The tasks should be automated as much as possible to enable efficiency. Standardizations are very important to support automation. By having standard processes and tools, a global maintenance and enhancements of tools can be provided. Then all users can benefit from this as updates could be made available to all users through standard processes.</description>
+    </item>
+    
+    <item>
+      <title>Model deployment for prediction</title>
+      <link>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-4/</link>
+      <pubDate>Tue, 12 Oct 2021 11:14:48 -0400</pubDate>
+      
+      <guid>https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-4/</guid>
+      <description>MODEL 1: LOGISTIC REGRESSION Designing and implementing a Logistic Regression model to predict Cause. We are using caret train for predicting cause where method is logistic regression, trControl and preProcess is defined in initial stages of loading and summarising data. trControl is using method “repeatedcv” for 10 fold cross validation and repeats 3. For preprocessing we are using principal component analysis which might improve a model’s ability since it creates a new set of variables, that are independent, from the existing ones.</description>
+    </item>
+    
+  </channel>
+</rss>

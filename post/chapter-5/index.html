@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Statistical Analysis using RStudio | Afreen Fatima</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Statistical Analysis using RStudio">
+    <meta name="generator" content="Hugo 0.110.0">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Statistical Analysis using RStudio" />
+<meta property="og:description" content="Statistical Analysis using RStudio" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/chapter-5/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-13T11:15:58-04:00" />
+<meta property="article:modified_time" content="2021-12-13T11:15:58-04:00" /><meta property="og:site_name" content="Afreen Fatima" />
+<meta itemprop="name" content="Statistical Analysis using RStudio">
+<meta itemprop="description" content="Statistical Analysis using RStudio"><meta itemprop="datePublished" content="2021-12-13T11:15:58-04:00" />
+<meta itemprop="dateModified" content="2021-12-13T11:15:58-04:00" />
+<meta itemprop="wordCount" content="906">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Statistical Analysis using RStudio"/>
+<meta name="twitter:description" content="Statistical Analysis using RStudio"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/statistics.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Afreen Fatima
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/Afreenn04/Portfolio-Data-Science.git" target="_blank" rel="noopener" class="GitHub ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Statistical Analysis using RStudio</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Statistical Analysis using RStudio
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Statistical Analysis using RStudio</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-12-13T11:15:58-04:00">December 13, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>SECTION 1: VISUALISATIONS AND SUMMARY STATISTICS
+Model 2 shows a normal distribution on histogram as it is not skewed on completely one side. Mean and median are calculated using ‘mean’ and ‘median’ functions where mean of model 2 is 82 and median is 82.3. Hence we can say the model 2 is normally distributed.
+Histogram ‘value’ does not shows a normal distribution as it is a skewed completely one side. Mean and median is calculated using ‘mean’ and ‘median’ functions where mean of value is 96 and median is 52. Hence we can say the column value is NOT normally distributed.
+value is highest for type self of recipient with mean 278 and standard deviation 135. Bill value of mean for recipient is 178 and standard deviation is 102.8 that will round up to 103. While, the purchase and transfer are the lowest with mean and standard deviation values.
+We can see a maximum number of transactions ranging between 0-50£ is highest and thereby increasing value of transaction pounds for money . We can see maximum of number of transactions has been done in time ranging between 30 - 250 seconds ranging from mobile, PC and tablet.
+Stack bar plots with device against status shows that the ‘Existing’ category of status is higher than the ‘New’ in three of the devices. While stack bar plot for vice versa shows for ‘Existing’ category of status both mobile and tablet has same distributions while for ‘New’ category device mobile is maximum, tablet and PC is minimum spread
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa1.jpg"/>
+ </figure>
+
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa2.jpg"/>
+ </figure>
+
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa3.jpg"/>
+ </figure>
+
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa4.jpg"/>
+ </figure>
+
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa5.jpg"/>
+ </figure>
+</p>
+<p>SECTION 2: TABLES AND MEASURES:
+One-way table shows that the Purchase is most common recipient type with 51.3% and self is least common recipient type with 8.7%
+Two way table shows that the Purchase has much lower rate of Existing than average, however, self is higher than average rate of Existing. Whereas Bill and transfer are average and slightly less than self rate.
+Table1 shows Mean value is higher in Existing status than New. Table2 shows PC has higher mean and followed with tablet and mobile.</p>
+<p>SECTION 3: SIGNIFICANCE TESTS:
+Model1: Mean is 79.9 with 99% confidence mean is going to be in 79.5 to 80.4. So, confidence interval of 99% says model1 is going to be mean of 79.9 for sure. Model2: Mean is 82 with 99% confidence mean is going to be in 81.5 to 82.5. So, confidence interval of 99% says model2 is going to be mean of 82.5 for sure. Notes: Both significance tests mean with confidence interval 99% doesn’t overlap and have a gap.
+t.test for significance level of 0.05 when compared with model2 and model1 variable. To check if there is a difference we test with null hypothesis as 0, paired test and two sided with 95% confidence and significance level of 5%. Therefore p value is very very tiny and below significance level. So, null hypothesis has failed in this case. there is a mean of the differences 2.09
+t.test with null hypothesis difference of 2 is resulting p value as 0.29 that is not lower than threshold that is our significance level 0.05. Also we have not meaningfully proven that difference is greater than 2
+For test 1 with status of recipients, a very small p value, strong evidence to reject the null hypothesis and accept the alternative that there is a significant difference in model2 means of existing and new recipients.For test 2 model 2 with device p value is again very very small and lower than threshold of 0.01, that’s null hypothesis rejected and tells us there is a definite difference.
+Checking for difference between different recipients of model2. Test of normality suggest our p value is lower than 0.95 so it is not normal and plot aov shows a little slight variation in plot but still cannot trust anova as the normality test is lower than 0.95
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa6.jpg"/>
+ </figure>
+
+Anova test does suggest majorly a difference exists but not completely.
+<figure><img src="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/images/sa7.jpg"/>
+ </figure>
+
+Tukey identifies differences between maximum levels, with transfer-bill the most different
+Shapiro test of normality is not good so we are applying non parametric test for difference in medians. p value is very small and yes there is a significant difference. Pairwise wilcox test shows the difference is between almost all recipients except self-bill and transfer-purchase.</p>
+<p>SECTION 4: EXPERIMENT DESIGN, SAMPLE SIZES AND RANDOM SAMPLING
+Standard deviation of model 2 is 4.8
+The output is showing estimate of number of data points as 126 so, we have to gather to get a test with the respective levels. The output has been rounded up with ceiling function to avoid decimal values and also unnecessary output.
+Sample size of data points 287 would be needed to increase the power of the test to 0.99 with significance level of 0.01. This has been calculated using the same power.t.test as above whereas the power is as required 0.99 and significance level is 0.01
+The dataframe of 126 random sample size as obtained in sample1 of 4.2 that has been produced by removing duplicates and slice sampling. And also the distribution table is plotted for all and sample size. With this we can see complete dataset without duplicates of size 600 observations are higher in distribution for bill, self and transfer than random sample dataframe of size 126. Whereas, purchase is higher in random sample than complete dataset.
+Stratified sample matches the complete dataset with purchase highly distributed as 0.51 and self as the least with 0.09</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://afreenn04.github.io/AfreenFatima_DataScience_Portfolio/" >
+    &copy;  Afreen Fatima 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://github.com/Afreenn04/Portfolio-Data-Science.git" target="_blank" rel="noopener" class="GitHub ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
